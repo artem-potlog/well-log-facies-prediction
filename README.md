@@ -7,7 +7,7 @@
 
 A comprehensive machine learning framework for **depositional facies classification** and **petrophysical property prediction** from well log data in the oil & gas industry. This project implements multiple ML approaches with robust **uncertainty quantification** to support reservoir characterization and geological interpretation.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project addresses the challenge of predicting geological facies (depositional environments) and petrophysical properties (porosity, water saturation) from well log measurements. Key innovations include:
 
@@ -30,7 +30,7 @@ This project addresses the challenge of predicting geological facies (deposition
 | 7 | Tidal Flat Muddy |
 | 8 | Tidal Flat Sandy |
 
-## 📊 Features
+## Features
 
 ### Input Well Log Data
 - **Base Logs (10)**: GR, RT, RD, NPHI, RHOB, DT, VSH, KLOGH, PHIF, SW
@@ -74,7 +74,7 @@ Predicts missing PHIF (porosity) and SW (water saturation) for well F-14:
 - Confidence intervals using tree variance
 - Uncertainty-aware predictions
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── Dataset_logs_core_v4_cleaned.csv          # Raw well log data
@@ -100,7 +100,7 @@ Predicts missing PHIF (porosity) and SW (water saturation) for well F-14:
 └── OLD/                                      # Previous versions
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -151,7 +151,7 @@ Interactive prompts will guide you through:
 python rf_regression_phif_sw_f14_imputation_v3_with_confidence.py
 ```
 
-## 📈 Output and Visualization
+## Output and Visualization
 
 ### Generated Outputs
 - **Confusion matrices** (raw counts and normalized)
@@ -171,7 +171,7 @@ The framework generates comprehensive visualizations including:
 - Training history plots
 - Well-based uncertainty analysis
 
-## ⚙️ Configuration
+## Configuration
 
 ### Hyperparameter Grid (RF)
 ```python
@@ -189,7 +189,7 @@ PARAM_GRID = {
 - L1/L2 regularization
 - Adam optimizer with learning rate scheduling
 
-## 📚 References
+## References
 
 This implementation is inspired by:
 
@@ -197,11 +197,11 @@ This implementation is inspired by:
 
 2. **Bayesian Uncertainty**: [Uncertainty quantification in facies classification from well logs](https://www.sciencedirect.com/science/article/pii/S0920410521004770)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -209,8 +209,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Well Log Analysis & ML Pipeline Development
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
+- Professor Vasily Demyanov, Heriot-Watt
 - Equinor for facies interpretation methodology
 - Volve dataset contributors
 - Open-source ML community
