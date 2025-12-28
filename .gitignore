@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+venv_tf/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output folders (machine learning results)
+RF_HDG_Uncertainty_*/
+RF_Uncertainty_Ensemble_*/
+
+# Nested git repositories
+well-log-facies-prediction-w-uncertainty/
+
+# Old/backup files
+OLD/
+
+# Large files
+*.pdf
+*.pptx
+*.docx
+
