@@ -1,0 +1,27 @@
+HDG UNCERTAINTY QUANTIFICATION REPORT
+Based on Halotel–Demyanov–Gardiner Approach
+============================================================
+
+TRAIN/VALIDATION SPLITS:
+----------------------------------------
+Split  1: Train=['F-14', 'F-15_C', 'F-5'], Val=['F-12']
+         Val F1: 0.2790, Test Acc: 0.5589
+Split  2: Train=['F-12', 'F-15_C', 'F-5'], Val=['F-14']
+         Val F1: 0.2542, Test Acc: 0.5633
+Split  3: Train=['F-12', 'F-14', 'F-5'], Val=['F-15_C']
+         Val F1: 0.3863, Test Acc: 0.5571
+Split  4: Train=['F-12', 'F-14', 'F-15_C'], Val=['F-5']
+         Val F1: 0.3667, Test Acc: 0.5712
+
+============================================================
+HDG ENSEMBLE STATISTICS:
+----------------------------------------
+Number of Train/Val Splits: 4
+Mean Test Accuracy: 0.5626
+HDG Ensemble Accuracy: 0.5712
+
+UNCERTAINTY QUANTIFICATION:
+  Mean HDG Uncertainty: 0.0466
+  Std HDG Uncertainty: 0.1219
+  Mean Prediction Range: 1.15 facies
+  Max Prediction Range: 3.0 facies

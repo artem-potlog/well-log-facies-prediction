@@ -1,0 +1,23 @@
+ENSEMBLE UNCERTAINTY QUANTIFICATION REPORT - V3
+============================================================
+
+MODEL COMBINATIONS USED:
+----------------------------------------
+Model   1: [F-12, F-14, F-15_C] -> Accuracy: 0.4359
+Model   2: [F-12, F-14, F-5] -> Accuracy: 0.6081
+Model   3: [F-12, F-15_C, F-5] -> Accuracy: 0.5615
+Model   4: [F-14, F-15_C, F-5] -> Accuracy: 0.5931
+
+============================================================
+ENSEMBLE STATISTICS:
+----------------------------------------
+Number of Models: 4
+Mean Individual Accuracy: 0.5496
+Ensemble Voting Accuracy: 0.5808
+Improvement over Mean: 3.12%
+
+VOTING AGREEMENT:
+  Mean: 84.2%
+  Std: 18.0%
+  Min: 25.0%
+  Max: 100.0%
