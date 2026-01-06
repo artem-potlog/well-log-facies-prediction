@@ -1,0 +1,24 @@
+{
+    "scenario": "FS_10_add_gr",
+    "n_features": 9,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3",
+        "Lithology_0",
+        "OppositionIndex",
+        "NTG_Slope",
+        "Lithology_1",
+        "Lithology_4",
+        "GR"
+    ],
+    "cv_score": 0.4329613679287585,
+    "cv_std": 0.03790872839443293,
+    "best_params": {
+        "classifier__max_depth": 20,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 5,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 200
+    }
+}

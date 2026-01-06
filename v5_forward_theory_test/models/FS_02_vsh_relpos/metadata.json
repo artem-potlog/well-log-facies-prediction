@@ -1,0 +1,17 @@
+{
+    "scenario": "FS_02_vsh_relpos",
+    "n_features": 2,
+    "features": [
+        "VSH",
+        "RelPos"
+    ],
+    "cv_score": 0.44367825291497603,
+    "cv_std": 0.04145445546557991,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 5,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    }
+}

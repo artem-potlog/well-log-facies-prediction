@@ -1,0 +1,36 @@
+{
+    "scenario_id": "V7_Rank_14_custom_sand",
+    "v7_combo_name": "V7_Rank_14",
+    "v7_rank": 14,
+    "v7_cv_score": 0.4725945718063787,
+    "metric": "custom_sand",
+    "n_features": 9,
+    "features": [
+        "VSH",
+        "NPHI",
+        "Lithology_0",
+        "Lithology_1",
+        "Lithology_4",
+        "GR_Slope",
+        "GR_Serration",
+        "NTG_Slope",
+        "BaseSharpness"
+    ],
+    "cv_mean_score": 0.484734376632987,
+    "cv_std_score": 0.06420138696938398,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 2,
+        "classifier__min_samples_split": 8,
+        "classifier__n_estimators": 100
+    },
+    "training_wells": [
+        "15_9-F-12",
+        "15_9-F-14",
+        "15_9-F-15_C",
+        "15_9-F-5"
+    ],
+    "n_cv_splits": 4,
+    "trained_at": "2026-01-06 02:35:58"
+}

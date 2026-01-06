@@ -1,0 +1,40 @@
+{
+    "scenario_id": "FC_13_fc3_lith_relpos_grtex_roc_auc_ovr",
+    "feature_combination": "FC_13_fc3_lith_relpos_grtex",
+    "metric": "roc_auc_ovr",
+    "n_features": 15,
+    "features": [
+        "GR",
+        "VSH",
+        "NPHI",
+        "RHOB",
+        "DT",
+        "PHIF",
+        "KLOGH",
+        "Lithology_0",
+        "Lithology_1",
+        "Lithology_2",
+        "Lithology_3",
+        "Lithology_4",
+        "RelPos",
+        "GR_Slope",
+        "GR_Serration"
+    ],
+    "cv_mean_score": 0.17470769202419648,
+    "cv_std_score": 0.3026025990590042,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 5,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    },
+    "training_wells": [
+        "15_9-F-12",
+        "15_9-F-14",
+        "15_9-F-15_C",
+        "15_9-F-4"
+    ],
+    "n_cv_splits": 4,
+    "trained_at": "2026-01-02 21:34:02"
+}

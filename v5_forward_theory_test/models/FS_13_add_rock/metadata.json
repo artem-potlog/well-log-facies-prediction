@@ -1,0 +1,26 @@
+{
+    "scenario": "FS_13_add_rock",
+    "n_features": 11,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3",
+        "Lithology_0",
+        "OppositionIndex",
+        "NTG_Slope",
+        "Lithology_1",
+        "Lithology_4",
+        "NPHI",
+        "RHOB",
+        "DT"
+    ],
+    "cv_score": 0.37917791428767944,
+    "cv_std": 0.053275144865212905,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 3,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    }
+}

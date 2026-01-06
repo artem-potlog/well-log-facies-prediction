@@ -49,7 +49,44 @@ This project addresses the challenge of predicting geological facies (deposition
 
 ## Machine Learning Approaches
 
-### 1. Random Forest Classification with HDG Uncertainty
+### V7 - Intelligent Feature Selection with Optuna (2026-01)
+
+#### V7: Feature Discovery
+**File:** `v7_multi_scenario_facies_cv.py`
+
+Uses Bayesian optimization to discover optimal features (1-2 hours):
+- Intelligently samples 2^21 = 2,097,152 feature combinations
+- Optuna TPE sampler with feature penalty
+- Finds 30-40 best combinations quickly
+
+#### V7 Final: Full Training (Recommended)
+**File:** `v7_multi_scenario_facies_cv_final.py`
+
+Trains V7 discoveries with V6's full methodology (3-5 hours):
+- Loads feature combinations from V7 results
+- Full GridSearchCV hyperparameter tuning
+- Same ensemble method as V6
+- Best of both worlds: V7 discovery + V6 training
+
+📖 **Documentation**: `V7_DOCUMENTATION.md`
+
+---
+
+### V6 - Multi-Scenario with Manual Feature Engineering (2026-01)
+**File:** `v6_multi_scenario_facies_cv.py`
+
+Systematic testing of 19 predefined feature combinations:
+- Progressive testing: baseline → lithology → engineered features
+- 2 optimization metrics: custom_sand + f1_weighted
+- GroupKFold CV for well-based cross-validation
+
+📖 **Documentation**: `V5_FEATURE_COMBINATIONS_FINAL.md`
+
+---
+
+### Legacy Approaches
+
+#### 1. Random Forest Classification with HDG Uncertainty
 **File:** `rf_classification_uncertainty_ensemble_v4_hdg.py`
 
 Implements the **Halotel–Demyanov–Gardiner (HDG)** approach:
@@ -58,7 +95,7 @@ Implements the **Halotel–Demyanov–Gardiner (HDG)** approach:
 - Ensemble predictions with uncertainty through voting agreement
 - Per-depth facies proportion analysis
 
-### 2. Bayesian Neural Network with MC Dropout
+#### 2. Bayesian Neural Network with MC Dropout
 **File:** `nn_facies_prediction_bayesian_dropout_well_split.py`
 
 - Monte Carlo Dropout for uncertainty estimation
@@ -66,7 +103,7 @@ Implements the **Halotel–Demyanov–Gardiner (HDG)** approach:
 - Calibrated confidence intervals
 - Detailed uncertainty analysis per facies
 
-### 3. Random Forest Regression for Property Prediction
+#### 3. Random Forest Regression for Property Prediction
 **File:** `rf_regression_phif_sw_f14_imputation_v3_with_confidence.py`
 
 Predicts missing PHIF (porosity) and SW (water saturation) for well F-14:
@@ -108,6 +145,11 @@ Predicts missing PHIF (porosity) and SW (water saturation) for well F-14:
 pip install -r requirements.txt
 ```
 
+**For V7 (Intelligent Feature Selection):**
+```bash
+pip install optuna>=3.0.0
+```
+
 ### Data Preparation
 
 1. Place your raw well log data as `Dataset_logs_core_v4_cleaned.csv`
@@ -126,7 +168,28 @@ This will:
 
 ### Training Models
 
-#### Random Forest HDG Ensemble
+#### V7 - Two-Step Workflow (Recommended)
+
+**Step 1: Feature Discovery**
+```bash
+python v7_multi_scenario_facies_cv.py
+```
+Discovers 30-40 best feature combinations. Time: 1-2 hours (100 trials).
+
+**Step 2: Full Training**
+```bash
+python v7_multi_scenario_facies_cv_final.py
+```
+Trains V7 discoveries with full GridSearchCV. Time: 3-5 hours (20-30 combinations).
+
+#### V6 - Multi-Scenario Testing
+```bash
+python v6_multi_scenario_facies_cv.py
+```
+
+Tests 19 predefined feature combinations. Select execution mode and wells. Expected time: 5-8 hours for full run.
+
+#### Random Forest HDG Ensemble (Legacy)
 ```bash
 python rf_classification_uncertainty_ensemble_v4_hdg.py
 ```

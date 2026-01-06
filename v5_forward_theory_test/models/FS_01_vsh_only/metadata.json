@@ -1,0 +1,16 @@
+{
+    "scenario": "FS_01_vsh_only",
+    "n_features": 1,
+    "features": [
+        "VSH"
+    ],
+    "cv_score": 0.42390661168596205,
+    "cv_std": 0.012731877825645487,
+    "best_params": {
+        "classifier__max_depth": 25,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 3,
+        "classifier__min_samples_split": 8,
+        "classifier__n_estimators": 200
+    }
+}

@@ -1,0 +1,10 @@
+step,n_features,added_feature,features,cv_score,cv_std
+1,1,VSH,['VSH'],0.42390661168596205,0.012731877825645487
+2,2,RelPos,"['VSH', 'RelPos']",0.44367825291497603,0.04145445546557991
+3,3,Lithology_3,"['VSH', 'RelPos', 'Lithology_3']",0.4654645253967098,0.060783636810078465
+4,4,Lithology_0,"['VSH', 'RelPos', 'Lithology_3', 'Lithology_0']",0.4625228865021783,0.05556994660405185
+5,5,OppositionIndex,"['VSH', 'RelPos', 'Lithology_3', 'Lithology_0', 'OppositionIndex']",0.46871981419667536,0.058270300128945185
+6,6,NTG_Slope,"['VSH', 'RelPos', 'Lithology_3', 'Lithology_0', 'OppositionIndex', 'NTG_Slope']",0.47595165995083866,0.06389763715525475
+7,7,Lithology_1,"['VSH', 'RelPos', 'Lithology_3', 'Lithology_0', 'OppositionIndex', 'NTG_Slope', 'Lithology_1']",0.4748826135618366,0.06831931767250989
+8,8,Lithology_4,"['VSH', 'RelPos', 'Lithology_3', 'Lithology_0', 'OppositionIndex', 'NTG_Slope', 'Lithology_1', 'Lithology_4']",0.4802457075032207,0.060390173879070724
+9,9,Lithology_2,"['VSH', 'RelPos', 'Lithology_3', 'Lithology_0', 'OppositionIndex', 'NTG_Slope', 'Lithology_1', 'Lithology_4', 'Lithology_2']",0.4747372242175908,0.06232925402946734

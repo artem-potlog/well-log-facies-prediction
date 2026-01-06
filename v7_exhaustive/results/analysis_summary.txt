@@ -1,0 +1,62 @@
+================================================================================
+V7 INTELLIGENT FEATURE SELECTION - RESULTS SUMMARY
+================================================================================
+
+Date: 2026-01-05 21:47:42
+Metric: custom_sand
+Total trials: 500
+Valid trials: 500
+Unique combinations: 40
+
+TOP 10 FEATURE COMBINATIONS
+--------------------------------------------------------------------------------
+
+Rank 1: Trial #355
+  CV Score: 0.4824 ± 0.0609
+  Objective: 0.4790
+  Features (7): VSH, NPHI, Lithology_0, Lithology_4, GR_Slope, GR_Serration, BaseSharpness
+
+Rank 2: Trial #343
+  CV Score: 0.4807 ± 0.0607
+  Objective: 0.4769
+  Features (8): VSH, NPHI, Lithology_0, Lithology_4, GR_Slope, GR_Serration, NTG_Slope, BaseSharpness
+
+Rank 3: Trial #200
+  CV Score: 0.4782 ± 0.0564
+  Objective: 0.4739
+  Features (9): VSH, NPHI, Lithology_0, Lithology_4, GR_Slope, GR_Serration, OppositionIndex, NTG_Slope, BaseSharpness
+
+Rank 4: Trial #364
+  CV Score: 0.4761 ± 0.0689
+  Objective: 0.4723
+  Features (8): VSH, NPHI, Lithology_0, Lithology_2, Lithology_4, GR_Slope, GR_Serration, BaseSharpness
+
+Rank 5: Trial #275
+  CV Score: 0.4752 ± 0.0632
+  Objective: 0.4714
+  Features (8): VSH, NPHI, Lithology_0, Lithology_4, GR_Slope, GR_Serration, OppositionIndex, BaseSharpness
+
+Rank 6: Trial #240
+  CV Score: 0.4753 ± 0.0658
+  Objective: 0.4710
+  Features (9): VSH, NPHI, Lithology_0, Lithology_2, Lithology_4, GR_Slope, GR_Serration, NTG_Slope, BaseSharpness
+
+Rank 7: Trial #176
+  CV Score: 0.4749 ± 0.0729
+  Objective: 0.4707
+  Features (9): VSH, NPHI, Lithology_0, Lithology_3, GR_Slope, GR_Serration, OppositionIndex, NTG_Slope, BaseSharpness
+
+Rank 8: Trial #197
+  CV Score: 0.4752 ± 0.0695
+  Objective: 0.4704
+  Features (10): VSH, NPHI, Lithology_0, Lithology_3, Lithology_4, GR_Slope, GR_Serration, OppositionIndex, NTG_Slope, BaseSharpness
+
+Rank 9: Trial #126
+  CV Score: 0.4751 ± 0.0527
+  Objective: 0.4703
+  Features (10): VSH, NPHI, DT, Lithology_0, Lithology_3, GR_Slope, GR_Serration, OppositionIndex, NTG_Slope, BaseSharpness
+
+Rank 10: Trial #284
+  CV Score: 0.4749 ± 0.0631
+  Objective: 0.4701
+  Features (10): VSH, NPHI, Lithology_0, Lithology_2, Lithology_4, GR_Slope, GR_Serration, OppositionIndex, NTG_Slope, BaseSharpness

@@ -1,0 +1,18 @@
+{
+    "scenario": "FS_03_add_lith3",
+    "n_features": 3,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3"
+    ],
+    "cv_score": 0.4654645253967098,
+    "cv_std": 0.060783636810078465,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 2,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    }
+}

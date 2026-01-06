@@ -1,0 +1,20 @@
+{
+    "scenario": "FS_05_add_opposition",
+    "n_features": 5,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3",
+        "Lithology_0",
+        "OppositionIndex"
+    ],
+    "cv_score": 0.46871981419667536,
+    "cv_std": 0.058270300128945185,
+    "best_params": {
+        "classifier__max_depth": 25,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 3,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    }
+}

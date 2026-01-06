@@ -1,0 +1,21 @@
+{
+    "scenario": "FS_06_add_ntg",
+    "n_features": 6,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3",
+        "Lithology_0",
+        "OppositionIndex",
+        "NTG_Slope"
+    ],
+    "cv_score": 0.47595165995083866,
+    "cv_std": 0.06389763715525475,
+    "best_params": {
+        "classifier__max_depth": 20,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 3,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "scenario": "FS_11_add_rt",
+    "n_features": 9,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3",
+        "Lithology_0",
+        "OppositionIndex",
+        "NTG_Slope",
+        "Lithology_1",
+        "Lithology_4",
+        "RT"
+    ],
+    "cv_score": 0.4009954760552425,
+    "cv_std": 0.030778884750678328,
+    "best_params": {
+        "classifier__max_depth": 25,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 2,
+        "classifier__min_samples_split": 8,
+        "classifier__n_estimators": 200
+    }
+}

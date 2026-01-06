@@ -1,0 +1,9 @@
+FORWARD FEATURE SELECTION RESULTS
+================================================================================
+
+Total time: 179.7 minutes
+Steps completed: 9
+Final features selected: 9
+
+SELECTION PROGRESSION:
+--------------------------------------------------------------------------------

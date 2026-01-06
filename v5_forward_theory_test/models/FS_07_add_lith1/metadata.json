@@ -1,0 +1,22 @@
+{
+    "scenario": "FS_07_add_lith1",
+    "n_features": 7,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_3",
+        "Lithology_0",
+        "OppositionIndex",
+        "NTG_Slope",
+        "Lithology_1"
+    ],
+    "cv_score": 0.4748826135618366,
+    "cv_std": 0.06831931767250989,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 3,
+        "classifier__min_samples_split": 8,
+        "classifier__n_estimators": 200
+    }
+}

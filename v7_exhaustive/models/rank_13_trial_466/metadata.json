@@ -1,0 +1,26 @@
+{
+    "model_id": "rank_13_trial_466",
+    "rank": 13,
+    "trial_number": 466,
+    "features": [
+        "VSH",
+        "NPHI",
+        "Lithology_0",
+        "Lithology_2",
+        "Lithology_4",
+        "RelPos",
+        "GR_Serration"
+    ],
+    "n_features": 7,
+    "cv_mean": 0.4716621052065306,
+    "cv_std": 0.08812183279179321,
+    "objective_value": 0.46832877187319727,
+    "best_params": {
+        "n_estimators": 200,
+        "max_depth": 20,
+        "min_samples_split": 5,
+        "min_samples_leaf": 3
+    },
+    "metric": "custom_sand",
+    "trained_at": "2026-01-05 21:47:10"
+}

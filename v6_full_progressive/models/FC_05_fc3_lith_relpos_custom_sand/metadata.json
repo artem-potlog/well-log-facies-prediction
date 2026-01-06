@@ -1,0 +1,38 @@
+{
+    "scenario_id": "FC_05_fc3_lith_relpos_custom_sand",
+    "feature_combination": "FC_05_fc3_lith_relpos",
+    "metric": "custom_sand",
+    "n_features": 13,
+    "features": [
+        "GR",
+        "VSH",
+        "NPHI",
+        "RHOB",
+        "DT",
+        "PHIF",
+        "KLOGH",
+        "Lithology_0",
+        "Lithology_1",
+        "Lithology_2",
+        "Lithology_3",
+        "Lithology_4",
+        "RelPos"
+    ],
+    "cv_mean_score": 0.3724030660136453,
+    "cv_std_score": 0.04258746222962009,
+    "best_params": {
+        "classifier__max_depth": 20,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 2,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 100
+    },
+    "training_wells": [
+        "15_9-F-12",
+        "15_9-F-14",
+        "15_9-F-15_C",
+        "15_9-F-5"
+    ],
+    "n_cv_splits": 4,
+    "trained_at": "2026-01-05 12:25:07"
+}

@@ -1,0 +1,37 @@
+{
+    "scenario_id": "FC_11_fc3_lithology_roc_auc_ovr",
+    "feature_combination": "FC_11_fc3_lithology",
+    "metric": "roc_auc_ovr",
+    "n_features": 12,
+    "features": [
+        "GR",
+        "VSH",
+        "NPHI",
+        "RHOB",
+        "DT",
+        "PHIF",
+        "KLOGH",
+        "Lithology_0",
+        "Lithology_1",
+        "Lithology_2",
+        "Lithology_3",
+        "Lithology_4"
+    ],
+    "cv_mean_score": 0.1632683244544353,
+    "cv_std_score": 0.2827890332217221,
+    "best_params": {
+        "classifier__max_depth": 25,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 2,
+        "classifier__min_samples_split": 8,
+        "classifier__n_estimators": 200
+    },
+    "training_wells": [
+        "15_9-F-12",
+        "15_9-F-14",
+        "15_9-F-15_C",
+        "15_9-F-4"
+    ],
+    "n_cv_splits": 4,
+    "trained_at": "2026-01-02 21:25:49"
+}

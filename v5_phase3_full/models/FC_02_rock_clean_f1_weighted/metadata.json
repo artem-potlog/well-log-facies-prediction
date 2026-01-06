@@ -1,0 +1,30 @@
+{
+    "scenario_id": "FC_02_rock_clean_f1_weighted",
+    "feature_combination": "FC_02_rock_clean",
+    "metric": "f1_weighted",
+    "n_features": 5,
+    "features": [
+        "GR",
+        "VSH",
+        "NPHI",
+        "RHOB",
+        "DT"
+    ],
+    "cv_mean_score": 0.37021298762526583,
+    "cv_std_score": 0.0806797237571536,
+    "best_params": {
+        "classifier__max_depth": 15,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 2,
+        "classifier__min_samples_split": 5,
+        "classifier__n_estimators": 200
+    },
+    "training_wells": [
+        "15_9-F-12",
+        "15_9-F-14",
+        "15_9-F-15_C",
+        "15_9-F-4"
+    ],
+    "n_cv_splits": 4,
+    "trained_at": "2025-12-31 09:47:34"
+}

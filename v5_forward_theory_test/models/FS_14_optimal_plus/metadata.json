@@ -1,0 +1,27 @@
+{
+    "scenario": "FS_14_optimal_plus",
+    "n_features": 12,
+    "features": [
+        "VSH",
+        "RelPos",
+        "Lithology_0",
+        "Lithology_1",
+        "Lithology_2",
+        "Lithology_3",
+        "Lithology_4",
+        "OppositionIndex",
+        "NTG_Slope",
+        "BaseSharpness",
+        "GR_Slope",
+        "GR_Serration"
+    ],
+    "cv_score": 0.45644826752298684,
+    "cv_std": 0.048426549281803045,
+    "best_params": {
+        "classifier__max_depth": 25,
+        "classifier__max_features": "sqrt",
+        "classifier__min_samples_leaf": 3,
+        "classifier__min_samples_split": 8,
+        "classifier__n_estimators": 100
+    }
+}
