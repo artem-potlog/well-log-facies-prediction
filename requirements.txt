@@ -1,25 +1,16 @@
-# Core Data Science
-numpy>=1.21.0
-pandas>=1.3.0
-scipy>=1.7.0
+# Python packages required to run main_pipeline.ipynb
+# Tested with Python 3.14 (any Python >= 3.10 should work).
+# Install everything with:  pip install -r requirements.txt
 
-# Machine Learning
-scikit-learn>=1.0.0
-tensorflow>=2.8.0
-optuna>=3.0.0  # V7: Bayesian optimization for feature selection
-joblib>=1.1.0  # Model serialization
+# --- Core scientific stack used by the notebook ---
+numpy==2.4.2
+pandas==3.0.1
+matplotlib==3.10.9
+scikit-learn==1.9.0
+scipy==1.17.1
 
-# Visualization
-matplotlib>=3.4.0
-seaborn>=0.11.0
-
-# Excel Support
-openpyxl>=3.0.0
-
-# Utilities
-warnings
-
-
-
-
-
+# --- Needed to open and run the .ipynb itself ---
+# (left unpinned so pip picks versions compatible with your Python)
+notebook
+jupyterlab
+ipykernel
