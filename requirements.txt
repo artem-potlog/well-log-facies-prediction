@@ -8,6 +8,7 @@ pandas==3.0.1
 matplotlib==3.10.9
 scikit-learn==1.9.0
 scipy==1.17.1
+openpyxl
 
 # --- Needed to open and run the .ipynb itself ---
 # (left unpinned so pip picks versions compatible with your Python)
